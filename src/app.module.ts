@@ -30,7 +30,7 @@ import { AuthMiddleware } from './auth/auth.middleware';
           password: configService.get('DB_PASS'),
           database: configService.get('DB_NAME'),
           // Only used in development to allow the databse to reflect the changes in the backend
-          synchronize: true,
+          synchronize: false,
           // entities: [Product],
           autoLoadEntities: true,
           extra: {
